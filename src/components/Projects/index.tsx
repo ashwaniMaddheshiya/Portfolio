@@ -29,7 +29,7 @@ const projects = [
   },
   {
     name: "Portfolio",
-    liveLink: "https://weather-app.com",
+    liveLink: "https://portfolio-ashwani.vercel.app/",
     githubLink: "https://github.com/weather-app-repo",
     imgSrc: Portfolio_Img,
   },

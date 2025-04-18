@@ -11,25 +11,25 @@ import Portfolio_Img from '/public/portfolio.png'
 const projects = [
   {
     name: "Chat Application",
-    liveLink: "https://chatbox-client.netlify.app/",
+    liveLink: "https://github.com/ashwaniMaddheshiya/ChatterBox",
     githubLink: "https://github.com/ashwaniMaddheshiya/ChatterBox",
     imgSrc: Chat_Img,
   },
   {
     name: "Prompt AI",
-    liveLink: "https://promptai-client.onrender.com/",
+    liveLink: "https://github.com/ashwaniMaddheshiya/PromptAI",
     githubLink: "https://github.com/ashwaniMaddheshiya/PromptAI",
     imgSrc: Prompt_Img,
   },
   {
     name: "AI Image Generator",
-    liveLink: "https://ai-image-generate.onrender.com/",
+    liveLink: "https://github.com/ashwaniMaddheshiya/Ai-Image-Generator",
     githubLink: "https://github.com/ashwaniMaddheshiya/Ai-Image-Generator",
     imgSrc: AI_Img,
   },
   {
     name: "Portfolio",
-    liveLink: "https://portfolio-ashwani.vercel.app/",
+    liveLink: "https://github.com/ashwaniMaddheshiya/Portfolio",
     githubLink: "https://github.com/ashwaniMaddheshiya/Portfolio",
     imgSrc: Portfolio_Img,
   },

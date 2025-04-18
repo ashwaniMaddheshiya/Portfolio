@@ -28,9 +28,21 @@ const Experience = () => {
           </div>
           <p className="text-secondary mt-2">
             🚀&nbsp; Contributed to and developed two production-ready WordPress
-            websites <Link href="https://shackverse.in/" className="text-teal-400 underline">Shackverse</Link> and{" "}
-            <Link href="https://xcelliance.com" className="text-teal-400 underline">Xcelliance</Link> ,
-            custom-tailored to client requirements—from design to
+            websites{" "}
+            <Link
+              href="https://shackverse.in/"
+              className="text-teal-400 underline"
+            >
+              Shackverse
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="https://xcelliance.com"
+              className="text-teal-400 underline"
+            >
+              Xcelliance
+            </Link>{" "}
+            , custom-tailored to client requirements—from design to
             deployment—while integrating Google Analytics 4 (GA4) for actionable
             user insights and performance tracking.
           </p>
@@ -54,7 +66,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-
+      
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 my-6">
         <div className="text-secondary text-center md:text-left">
           FEB - JULY 2024
@@ -62,13 +74,19 @@ const Experience = () => {
         <div className="md:col-span-3">
           <div className="font-semibold">Software Developer, 10Times</div>
           <p className="text-secondary mt-2">
-            💼&nbsp; Contributed to an event management platform, focusing on
-            delivering real-time insights into event engagement through dynamic
-            charts and data visualization. My responsibilities included
-            implementing OTP-based authentication for secure access, ensuring
-            mobile and desktop responsiveness, and managing API integrations for
-            data retrieval. I also handled authentication and data validation to
-            support seamless and secure user experiences.
+            💼&nbsp; Contributed to an event management platform{" "}
+            <Link
+              href="https://gtm.whr.ai/"
+              className="text-teal-400 underline"
+            >
+              EventGtm
+            </Link>
+            , focusing on delivering real-time insights into event engagement
+            through dynamic charts and data visualization. My responsibilities
+            included implementing OTP-based authentication for secure access,
+            ensuring mobile and desktop responsiveness, and managing API
+            integrations for data retrieval. I also handled authentication and
+            data validation to support seamless and secure user experiences.
           </p>
           <div className="flex flex-wrap gap-2 mt-3">
             {tech10.map((tech, ind) => (
@@ -77,7 +95,6 @@ const Experience = () => {
           </div>
         </div>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 my-6">
         <div className="text-secondary text-center md:text-left">
           JAN - APR 2023

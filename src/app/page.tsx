@@ -42,7 +42,7 @@ export default function Home() {
 
       {/* Projects Section */}
       <motion.div variants={sectionVariants}>
-        <SectionHeader title="Browse My Work" />
+        <SectionHeader title="Personal Projects" />
         <Projects />
       </motion.div>
 

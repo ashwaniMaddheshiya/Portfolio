@@ -70,8 +70,8 @@ const Contact = () => {
       </div>
       <div className="mb-6 text-center text-sm sm:text-base">
         <p>
-          Feel free to share your details below, and I&apos;ll get back to you as
-          soon as possible.
+          Feel free to share your details below, and I&apos;ll get back to you
+          as soon as possible.
         </p>
         <p className="mt-2">
           Alternatively, you can reach me directly via email:
@@ -81,7 +81,7 @@ const Contact = () => {
 
       <motion.form onSubmit={handleSubmit} className="flex flex-col gap-6">
         {/* Name */}
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2">
           <label htmlFor="name" className="text-sm text-secondary">
             Please enter your name
           </label>
@@ -93,7 +93,6 @@ const Contact = () => {
             value={form.name}
             onChange={handleChange}
             className={inputClasses("name")}
-            whileFocus={{ scale: 1.02 }}
           />
           {errors.name && (
             <span className="text-red-500 text-xs">{errors.name}</span>
@@ -101,7 +100,7 @@ const Contact = () => {
         </div>
 
         {/* Email */}
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2">
           <label htmlFor="email" className="text-sm text-secondary">
             Please enter your email
           </label>
@@ -113,7 +112,6 @@ const Contact = () => {
             value={form.email}
             onChange={handleChange}
             className={inputClasses("email")}
-            whileFocus={{ scale: 1.02 }}
           />
           {errors.email && (
             <span className="text-red-500 text-xs">{errors.email}</span>
@@ -121,7 +119,7 @@ const Contact = () => {
         </div>
 
         {/* Message */}
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2">
           <label htmlFor="message" className="text-sm text-secondary">
             How can I help you?
           </label>
@@ -132,7 +130,6 @@ const Contact = () => {
             value={form.message}
             onChange={handleChange}
             className={`${inputClasses("message")} resize-none h-32`}
-            whileFocus={{ scale: 1.02 }}
           />
           {errors.message && (
             <span className="text-red-500 text-xs">{errors.message}</span>

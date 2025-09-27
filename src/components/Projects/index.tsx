@@ -1,76 +1,77 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
-import arrowIcon from "/public/arrow.svg";
-import AI_Img from "/public/ai.png";
-import Chat_Img from "/public/chat.png";
-import Prompt_Img from "/public/prompt.jpg";
-import Portfolio_Img from '/public/portfolio.png'
 
 const projects = [
   {
-    name: "Chat Application",
-    liveLink: "https://github.com/ashwaniMaddheshiya/ChatterBox",
-    githubLink: "https://github.com/ashwaniMaddheshiya/ChatterBox",
-    imgSrc: Chat_Img,
+    name: "InterviewCraft",
+    description:
+      "An AI-powered interview practice platform that helps developers prepare for technical interviews with role-based, experience-specific questions and instant feedback. Built with Next.js 15, NestJS, and OpenAI GPT models, it offers smart question generation, real-time performance analysis, and a seamless, responsive user experience.",
+    liveLink: "https://interviewcraft-xi.vercel.app/",
+    githubLink: "https://github.com/ashwaniMaddheshiya/interviewcraft",
   },
   {
-    name: "Prompt AI",
-    liveLink: "https://github.com/ashwaniMaddheshiya/PromptAI",
-    githubLink: "https://github.com/ashwaniMaddheshiya/PromptAI",
-    imgSrc: Prompt_Img,
+    name: "Code Sync Editor",
+    description:
+      "A real-time collaborative code editor built with WebSockets and Node.js. It allows multiple users to code together seamlessly, with instant updates across sessions. Designed for teams who need quick collaboration without external tools.",
+    liveLink: "https://code-sync-editor-client.onrender.com/",
+    githubLink: "https://github.com/ashwaniMaddheshiya/code-sync-editor",
   },
+
   {
     name: "AI Image Generator",
+    description:
+      "A text-to-image generator leveraging OpenAI's image models. Users can input prompts and instantly generate unique visuals. Built with React, Node.js, and Tailwind, it delivers fast responses with a clean, minimal UI.",
     liveLink: "https://github.com/ashwaniMaddheshiya/Ai-Image-Generator",
     githubLink: "https://github.com/ashwaniMaddheshiya/Ai-Image-Generator",
-    imgSrc: AI_Img,
   },
   {
     name: "Portfolio",
-    liveLink: "https://github.com/ashwaniMaddheshiya/Portfolio",
+    description:
+      "My personal portfolio built with Next.js and Tailwind CSS. It highlights my projects, skills, and experiences with a focus on performance and responsive design. The site is fully optimized for dark mode with smooth animations.",
+    liveLink: "https://portfolio-ashwani.vercel.app/",
     githubLink: "https://github.com/ashwaniMaddheshiya/Portfolio",
-    imgSrc: Portfolio_Img,
   },
 ];
 
 const Projects = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {projects.map((project, index) => (
-        <div
+        <motion.div
           key={index}
-          className="relative border border-[#232323] rounded-3xl overflow-hidden hover:text-teal-400"
+          whileHover={{ scale: 1.03 }}
+          transition={{ duration: 0.3 }}
+          className="border border-gray-700 bg-[#111111] rounded-2xl p-6 flex flex-col justify-between shadow-md hover:shadow-teal-500/20"
         >
-          <motion.div
-            className="w-full h-80 overflow-hidden"
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <Link href={project.githubLink}>
-              <Image
-                src={project.imgSrc}
-                alt={project.name}
-                width={500}
-                height={300}
-                className="object-cover w-full h-full"
-              />
-            </Link>
-          </motion.div>
+          {/* Project Title & Description */}
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-3">
+              {project.name}
+            </h3>
+            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+              {project.description}
+            </p>
+          </div>
 
-          <div className="absolute bottom-4 left-6 right-6 flex justify-between items-center">
-            <div className="text-lg font-bold">{project.name}</div>
+          {/* Links */}
+          <div className="flex justify-between mt-auto">
             <Link
               href={project.liveLink}
               target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm transition"
+              className="text-teal-400 hover:underline text-sm font-medium"
             >
-              <Image src={arrowIcon} alt="Live Link" width={25} height={25} />
+              🔗 Live
+            </Link>
+            <Link
+              href={project.githubLink}
+              target="_blank"
+              className="text-teal-400 hover:underline text-sm font-medium"
+            >
+              💻 Source
             </Link>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

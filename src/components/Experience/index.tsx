@@ -12,6 +12,7 @@ const techX = [
   "Solidity",
   "BlockChain",
   "WordPress",
+  "Nestjs",
 ];
 const techH = ["JavaScript", "NextJs", "NodeJs", "MongoDB"];
 
@@ -27,37 +28,27 @@ const Experience = () => {
             Software Developer, Xcelliance Technologies
           </div>
           <p className="text-secondary mt-2">
-            🚀&nbsp; Contributed to and developed two production-ready WordPress
-            websites{" "}
-            <Link
-              href="https://shackverse.in/"
-              className="text-teal-400 underline"
-            >
-              Shackverse
-            </Link>{" "}
-            and{" "}
-            <Link
-              href="https://xcelliance.com"
-              className="text-teal-400 underline"
-            >
-              Xcelliance
-            </Link>{" "}
-            , custom-tailored to client requirements—from design to
+            🚀&nbsp; Contributed to and developed 3+ production-ready WordPress
+            websites , custom-tailored to client requirements—from design to
             deployment—while integrating Google Analytics 4 (GA4) for actionable
             user insights and performance tracking.
           </p>
 
           <p className="text-secondary mt-2">
-            🚀&nbsp; Spearheaded the development of a full-scale College
-            Management System using Turborepo and Next.js, featuring separate
-            web applications for faculty, admin, and students. Single-handedly
-            handled everything from architecture and development to final
-            deployment, ensuring a scalable and seamless multi-role experience.
+            🚀&nbsp; Built a College Management System single-handedly from
+            scratch using Next.js and TurboRepo, enhancing load performance and
+            enabling 1000+ students and faculty to access services seamlessly
+            offline via PWA support, with a feature-rich admin dashboard and
+            role-based access control.
           </p>
           <p className="text-secondary mt-2">
-            🛠️&nbsp; Currently working on the frontend development of a Crypto
-            Trading Platform, focusing on delivering a fast, intuitive, and
-            secure user experience using React and modern web technologies.
+            🛠️&nbsp; Managed three projects simultaneously: (1) creating an
+            AI-powered cannabis recommendation engine to handle 10k+ product
+            records, (2) building a Sales Buddy application for 500+ retailers
+            and distributors with integrated Meta catalogues, and (3) developing
+            a secure crypto trading platform capable of handling real-time
+            transactions with advanced TradingView charting and enterprise-grade
+            security
           </p>
           <div className="flex flex-wrap gap-2 mt-3">
             {techX.map((tech, ind) => (
@@ -66,7 +57,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 my-6">
         <div className="text-secondary text-center md:text-left">
           FEB - JULY 2024

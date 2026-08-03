@@ -19,11 +19,11 @@ const projects = [
   },
 
   {
-    name: "AI Image Generator",
+    name: "AI-CSV Parser",
     description:
-      "A text-to-image generator leveraging OpenAI's image models. Users can input prompts and instantly generate unique visuals. Built with React, Node.js, and Tailwind, it delivers fast responses with a clean, minimal UI.",
-    liveLink: "https://github.com/ashwaniMaddheshiya/Ai-Image-Generator",
-    githubLink: "https://github.com/ashwaniMaddheshiya/Ai-Image-Generator",
+      "Built an AI-powered CSV parser using Next.js, Express, TypeScript, and Google Gemini that intelligently maps diverse CSV formats into standardized CRM records with validation, batch processing, retries, and real-time import insights.",
+    liveLink: "https://ai-csv-parser.vercel.app",
+    githubLink: "https://github.com/ashwaniMaddheshiya/AI-CSV-Parser",
   },
   {
     name: "Portfolio",
